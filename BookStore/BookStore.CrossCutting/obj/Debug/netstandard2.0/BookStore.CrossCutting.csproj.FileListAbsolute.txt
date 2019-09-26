@@ -5,3 +5,4 @@ C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\bin\Debug\netstandard2
 C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\bin\Debug\netstandard2.0\BookStore.CrossCutting.pdb
 C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\obj\Debug\netstandard2.0\BookStore.CrossCutting.dll
 C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\obj\Debug\netstandard2.0\BookStore.CrossCutting.pdb
+C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\obj\Debug\netstandard2.0\BookStore.CrossCutting.csprojAssemblyReference.cache

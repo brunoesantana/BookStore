@@ -5,3 +5,4 @@ C:\teste_theos\BookStore\BookStore\BookStore.Domain\obj\Debug\netstandard2.0\Boo
 C:\teste_theos\BookStore\BookStore\BookStore.Domain\obj\Debug\netstandard2.0\BookStore.Domain.AssemblyInfo.cs
 C:\teste_theos\BookStore\BookStore\BookStore.Domain\obj\Debug\netstandard2.0\BookStore.Domain.dll
 C:\teste_theos\BookStore\BookStore\BookStore.Domain\obj\Debug\netstandard2.0\BookStore.Domain.pdb
+C:\teste_theos\BookStore\BookStore\BookStore.Domain\obj\Debug\netstandard2.0\BookStore.Domain.csprojAssemblyReference.cache
