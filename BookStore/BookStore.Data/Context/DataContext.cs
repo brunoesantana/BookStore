@@ -12,7 +12,6 @@ namespace BookStore.Data.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                //FIXME
                 optionsBuilder.UseLazyLoadingProxies();
                 optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=master;Initial Catalog=bookstore;Trusted_Connection=True");
             }
@@ -20,16 +19,16 @@ namespace BookStore.Data.Context
             base.OnConfiguring(optionsBuilder);
         }
 
-        public virtual void UpdateDatabase()
-        {
-            //FIXME
-            if (Database.IsInMemory())
-            {
-                Database.EnsureCreated();
+        //public virtual void UpdateDatabase()
+        //{
+        //    //FIXME
+        //    if (Database.IsInMemory())
+        //    {
+        //        Database.EnsureCreated();
 
-                return;
-            }
-            Database.Migrate();
-        }
+        //        return;
+        //    }
+        //    Database.Migrate();
+        //}
     }
 }

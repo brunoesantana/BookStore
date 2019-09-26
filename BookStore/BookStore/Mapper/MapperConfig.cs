@@ -12,7 +12,6 @@ namespace BookStore.Api.Mapper
 
             _isMapped = true;
 
-            //FIXME
             AutoMapper.Mapper.Initialize(mapper =>
             {
                 mapper.AddProfile<MapperDto2Entity>();

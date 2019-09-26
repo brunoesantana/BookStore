@@ -1,7 +1,6 @@
-﻿using System;
+﻿using AutoMapper;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace BookStore.CrossCutting.Helper
 {
@@ -15,15 +14,13 @@ namespace BookStore.CrossCutting.Helper
                 return ret;
             }
 
-            //FIXME
-            ret.AddRange(src.Select(origin => (TDestiny)AutoMapper.Mapper.Map(origin, typeof(TOrigin), typeof(TDestiny))));
+            ret.AddRange(src.Select(origin => (TDestiny)Mapper.Map(origin, typeof(TOrigin), typeof(TDestiny))));
             return ret;
         }
 
         public static TDestiny Map<TSource, TDestiny>(TSource origin)
         {
-            //FIXME
-            return AutoMapper.Mapper.Map<TDestiny>(origin);
+            return Mapper.Map<TDestiny>(origin);
         }
     }
 }

@@ -1,10 +1,8 @@
-﻿using BookStore.CrossCutting.DTO.Book;
+﻿using AutoMapper;
+using BookStore.CrossCutting.DTO.Book;
 using BookStore.CrossCutting.DTO.User;
+using BookStore.CrossCutting.Helper;
 using BookStore.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BookStore.Api.Mapper
 {
@@ -16,7 +14,7 @@ namespace BookStore.Api.Mapper
             CreateMap<BookUpdateDTO, Book>();
 
             CreateMap<UserInsertDTO, User>()
-                .ForMember(to => to.Password, map => map.MapFrom(from => from.Password.EncryptPassword()));
+                .ForMember(to => to.Password, map => map.MapFrom(from => EncryptHelper.EncryptPassword(from.Password)));
 
             CreateMap<UserUpdateDTO, User>();
         }

@@ -1,6 +1,7 @@
 ﻿using BookStore.Business.Interface.Base;
 using BookStore.CrossCutting.DTO.Base;
 using BookStore.CrossCutting.Exceptions;
+using BookStore.CrossCutting.Helper;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,6 @@ namespace BookStore.Api.Controllers.Base
             if (!ModelState.IsValid)
                 throw new EntityValidationException();
 
-            //FIXME
             var entity = MapperHelper.Map<TInsertDto, T>(model);
             var response = _service.Create(entity);
 
@@ -55,7 +55,6 @@ namespace BookStore.Api.Controllers.Base
 
         protected ActionResult GetAll()
         {
-            //FIXME
             var response = _service.GetAll();
             return Ok(MapperHelper.Map<List<T>, List<TDto>>(response));
         }
