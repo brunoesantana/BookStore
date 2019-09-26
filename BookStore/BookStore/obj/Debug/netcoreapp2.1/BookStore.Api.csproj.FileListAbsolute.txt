@@ -1,0 +1,6 @@
+C:\teste_theos\BookStore\BookStore\BookStore\obj\Debug\netcoreapp2.1\BookStore.Api.csprojAssemblyReference.cache
+C:\teste_theos\BookStore\BookStore\BookStore\obj\Debug\netcoreapp2.1\BookStore.Api.csproj.CoreCompileInputs.cache
+C:\teste_theos\BookStore\BookStore\BookStore\obj\Debug\netcoreapp2.1\BookStore.Api.RazorAssemblyInfo.cache
+C:\teste_theos\BookStore\BookStore\BookStore\obj\Debug\netcoreapp2.1\BookStore.Api.RazorAssemblyInfo.cs
+C:\teste_theos\BookStore\BookStore\BookStore\obj\Debug\netcoreapp2.1\BookStore.Api.AssemblyInfoInputs.cache
+C:\teste_theos\BookStore\BookStore\BookStore\obj\Debug\netcoreapp2.1\BookStore.Api.AssemblyInfo.cs

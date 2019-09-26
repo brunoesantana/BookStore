@@ -1,0 +1,4 @@
+C:\teste_theos\BookStore\BookStore\BookStore.Business\obj\Debug\netstandard2.0\BookStore.Business.csprojAssemblyReference.cache
+C:\teste_theos\BookStore\BookStore\BookStore.Business\obj\Debug\netstandard2.0\BookStore.Business.csproj.CoreCompileInputs.cache
+C:\teste_theos\BookStore\BookStore\BookStore.Business\obj\Debug\netstandard2.0\BookStore.Business.AssemblyInfoInputs.cache
+C:\teste_theos\BookStore\BookStore\BookStore.Business\obj\Debug\netstandard2.0\BookStore.Business.AssemblyInfo.cs

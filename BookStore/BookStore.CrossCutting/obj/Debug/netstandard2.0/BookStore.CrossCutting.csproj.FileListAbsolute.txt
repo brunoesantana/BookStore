@@ -1,0 +1,4 @@
+C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\obj\Debug\netstandard2.0\BookStore.CrossCutting.csprojAssemblyReference.cache
+C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\obj\Debug\netstandard2.0\BookStore.CrossCutting.csproj.CoreCompileInputs.cache
+C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\obj\Debug\netstandard2.0\BookStore.CrossCutting.AssemblyInfoInputs.cache
+C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\obj\Debug\netstandard2.0\BookStore.CrossCutting.AssemblyInfo.cs
