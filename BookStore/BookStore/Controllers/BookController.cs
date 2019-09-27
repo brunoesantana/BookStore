@@ -18,6 +18,7 @@ namespace BookStore.Controllers
 
         [HttpGet]
         [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         public new ActionResult GetAll()
         {
@@ -34,10 +35,10 @@ namespace BookStore.Controllers
         }
 
         [HttpPost]
-        [ProducesResponseType((int)HttpStatusCode.Created)]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        //[Validation]
+        [TokenRequestValidation]
         public new ActionResult Add([FromBody] BookInsertDTO model)
         {
             return base.Add(model);
@@ -47,16 +48,17 @@ namespace BookStore.Controllers
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        //[Validation]
+        [TokenRequestValidation]
         public new ActionResult Update([FromRoute] Guid id, [FromBody] BookUpdateDTO model)
         {
             return base.Update(id, model);
         }
 
         [HttpDelete("{id}")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NoContent)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        //[Validation]
+        [TokenRequestValidation]
         public new ActionResult Delete(Guid id)
         {
             return base.Delete(id);

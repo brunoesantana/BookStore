@@ -2,7 +2,7 @@
 
 namespace BookStore.Api.Auth
 {
-    public class Validation : ActionFilterAttribute
+    public class TokenRequestValidation : ActionFilterAttribute
     {
         public override void OnActionExecuting(ActionExecutingContext context)
         {

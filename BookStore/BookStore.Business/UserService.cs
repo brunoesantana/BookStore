@@ -4,8 +4,6 @@ using BookStore.CrossCutting.Exceptions;
 using BookStore.Data.Interface;
 using BookStore.Domain;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BookStore.Business
 {
@@ -23,6 +21,14 @@ namespace BookStore.Business
                 throw new NotFoundException();
 
             return base.Create(dto);
+        }
+
+        public override User Update(User dto)
+        {
+            var user = ((IUserRepository)Repository).Find(dto.Id);
+            dto.Password = user.Password;
+
+            return base.Update(dto);
         }
 
         public User Login(string login, string password)

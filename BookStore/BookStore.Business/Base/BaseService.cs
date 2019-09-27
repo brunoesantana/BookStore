@@ -38,7 +38,7 @@ namespace BookStore.Business.Base
 
         public virtual List<T> GetAll()
         {
-            return Repository.GetAll();
+            return Repository.GetAll() ?? throw new NotFoundException();
         }
     }
 }
