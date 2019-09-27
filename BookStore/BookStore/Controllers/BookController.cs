@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net;
+using BookStore.Api.Auth;
 using BookStore.Api.Controllers.Base;
 using BookStore.Business.Interface;
 using BookStore.CrossCutting.DTO.Book;
@@ -36,6 +37,7 @@ namespace BookStore.Controllers
         [ProducesResponseType((int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
+        //[Validation]
         public new ActionResult Add([FromBody] BookInsertDTO model)
         {
             return base.Add(model);
@@ -45,6 +47,7 @@ namespace BookStore.Controllers
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
+        //[Validation]
         public new ActionResult Update([FromRoute] Guid id, [FromBody] BookUpdateDTO model)
         {
             return base.Update(id, model);
@@ -53,6 +56,7 @@ namespace BookStore.Controllers
         [HttpDelete("{id}")]
         [ProducesResponseType((int)HttpStatusCode.NoContent)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
+        //[Validation]
         public new ActionResult Delete(Guid id)
         {
             return base.Delete(id);

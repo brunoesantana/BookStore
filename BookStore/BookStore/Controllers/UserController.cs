@@ -1,4 +1,5 @@
-﻿using BookStore.Api.Controllers.Base;
+﻿using BookStore.Api.Auth;
+using BookStore.Api.Controllers.Base;
 using BookStore.Business.Interface;
 using BookStore.CrossCutting.DTO.User;
 using BookStore.Domain;
@@ -18,6 +19,7 @@ namespace BookStore.Api.Controllers
         [HttpGet]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
+        //[Validation]
         public new ActionResult GetAll()
         {
             return base.GetAll();
@@ -27,6 +29,7 @@ namespace BookStore.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
+        //[Validation]
         public ActionResult Get(Guid id)
         {
             return base.Find(id);
@@ -45,6 +48,7 @@ namespace BookStore.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
+        //[Validation]
         public new ActionResult Update([FromRoute] Guid id, [FromBody] UserUpdateDTO model)
         {
             return base.Update(id, model);
@@ -53,6 +57,7 @@ namespace BookStore.Api.Controllers
         [HttpDelete("{id}")]
         [ProducesResponseType((int)HttpStatusCode.NoContent)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
+        //[Validation]
         public new ActionResult Delete(Guid id)
         {
             return base.Delete(id);

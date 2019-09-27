@@ -1,0 +1,8 @@
+C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\bin\Release\netstandard2.0\BookStore.CrossCutting.deps.json
+C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\bin\Release\netstandard2.0\BookStore.CrossCutting.dll
+C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\bin\Release\netstandard2.0\BookStore.CrossCutting.pdb
+C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\obj\Release\netstandard2.0\BookStore.CrossCutting.csprojAssemblyReference.cache
+C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\obj\Release\netstandard2.0\BookStore.CrossCutting.AssemblyInfoInputs.cache
+C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\obj\Release\netstandard2.0\BookStore.CrossCutting.AssemblyInfo.cs
+C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\obj\Release\netstandard2.0\BookStore.CrossCutting.dll
+C:\teste_theos\BookStore\BookStore\BookStore.CrossCutting\obj\Release\netstandard2.0\BookStore.CrossCutting.pdb

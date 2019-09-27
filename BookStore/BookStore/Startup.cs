@@ -3,11 +3,13 @@ using BookStore.Api.Mapper;
 using BookStore.CrossCutting.Helper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Hosting.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Swagger;
+using System.IO;
 
 namespace BookStore
 {
@@ -40,6 +42,14 @@ namespace BookStore
                     Title = "BookStore",
                     Version = "v1"
                 });
+
+                //c.AddSecurityDefinition("Bearer", new ApiKeyScheme
+                //{
+                //    Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+                //    Name = "authorization",
+                //    In = "header",
+                //    Type = "apiKey"
+                //});
             });
         }
 
@@ -50,6 +60,7 @@ namespace BookStore
             {
                 app.UseDeveloperExceptionPage();
             }
+
             app.UseMiddleware(typeof(ExceptionHelper));
             app.UseHttpsRedirection();
             app.UseMvc();

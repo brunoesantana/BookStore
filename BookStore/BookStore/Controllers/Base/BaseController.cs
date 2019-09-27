@@ -16,24 +16,25 @@ namespace BookStore.Api.Controllers.Base
         {
             _service = baseService;
         }
-        protected ActionResult Add(TInsertDto model)
+
+        protected ActionResult Add(TInsertDto dto)
         {
             if (!ModelState.IsValid)
                 throw new EntityValidationException();
 
-            var entity = MapperHelper.Map<TInsertDto, T>(model);
+            var entity = MapperHelper.Map<TInsertDto, T>(dto);
             var response = _service.Create(entity);
 
             return Ok(response);
         }
 
-        protected ActionResult Update(Guid id, TUpdateDto modelo)
+        protected ActionResult Update(Guid id, TUpdateDto dto)
         {
             if (!ModelState.IsValid)
                 throw new EntityValidationException();
 
-            modelo.Id = id;
-            var entity = MapperHelper.Map<TUpdateDto, T>(modelo);
+            dto.Id = id;
+            var entity = MapperHelper.Map<TUpdateDto, T>(dto);
             var response = _service.Update(entity);
 
             return Ok(response);
@@ -48,8 +49,10 @@ namespace BookStore.Api.Controllers.Base
         protected ActionResult Find(Guid id)
         {
             var response = _service.Find(id);
+
             if (response == null)
                 return NotFound();
+
             return Ok(MapperHelper.Map<T, TDto>(response));
         }
 

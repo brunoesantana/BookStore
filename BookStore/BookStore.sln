@@ -21,9 +21,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{83
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{5C73E3B2-3DC8-4B3F-886D-BD6F90849B92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Data", "BookStore.Data\BookStore.Data.csproj", "{B176BE22-1842-405D-92D2-CB0E940EB563}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Data", "BookStore.Data\BookStore.Data.csproj", "{B176BE22-1842-405D-92D2-CB0E940EB563}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Business", "BookStore.Business\BookStore.Business.csproj", "{59176543-DDE6-4AA0-9535-9F629B856697}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Business", "BookStore.Business\BookStore.Business.csproj", "{59176543-DDE6-4AA0-9535-9F629B856697}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{7278B07E-23A0-4C02-93CB-936B92FE1D03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Test", "Services.Test\Services.Test.csproj", "{0093C236-94CB-4813-A22D-B26ED08989EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,10 @@ Global
 		{59176543-DDE6-4AA0-9535-9F629B856697}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59176543-DDE6-4AA0-9535-9F629B856697}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59176543-DDE6-4AA0-9535-9F629B856697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0093C236-94CB-4813-A22D-B26ED08989EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0093C236-94CB-4813-A22D-B26ED08989EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0093C236-94CB-4813-A22D-B26ED08989EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0093C236-94CB-4813-A22D-B26ED08989EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +71,7 @@ Global
 		{5C73E3B2-3DC8-4B3F-886D-BD6F90849B92} = {85ADCFB4-F5CE-468F-A703-85DD457E109F}
 		{B176BE22-1842-405D-92D2-CB0E940EB563} = {5C73E3B2-3DC8-4B3F-886D-BD6F90849B92}
 		{59176543-DDE6-4AA0-9535-9F629B856697} = {83DE218A-FF3A-4EA1-949C-F780021E4EE0}
+		{0093C236-94CB-4813-A22D-B26ED08989EF} = {7278B07E-23A0-4C02-93CB-936B92FE1D03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD51BA99-E5F6-4239-AEF6-ED8C3F845808}
