@@ -27,7 +27,9 @@ namespace BookStore.Business.Base
 
         public virtual void Remove(Guid id)
         {
-            Find(id);
+            if(Find(id) == null)
+                throw new NotFoundException();
+
             Repository.Remove(id);
         }
 
@@ -38,7 +40,7 @@ namespace BookStore.Business.Base
 
         public virtual List<T> GetAll()
         {
-            return Repository.GetAll() ?? throw new NotFoundException();
+            return Repository.GetAll();
         }
     }
 }

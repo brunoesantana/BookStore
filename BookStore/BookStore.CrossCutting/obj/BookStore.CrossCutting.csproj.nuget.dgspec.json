@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\teste_theos\\BookStore\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {}
+    "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {}
   },
   "projects": {
-    "C:\\teste_theos\\BookStore\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
+    "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
+        "projectUniqueName": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
         "projectName": "BookStore.CrossCutting",
-        "projectPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
+        "projectPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.CrossCutting\\obj\\",
+        "outputPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

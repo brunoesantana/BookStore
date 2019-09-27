@@ -12,13 +12,14 @@ namespace BookStore.Api.Controllers
     [Route("api/v1/users")]
     public class UserController : BaseController<User, UserDTO, UserInsertDTO, UserUpdateDTO>
     {
-        public UserController(IUserService baseService) : base(baseService)
+        public UserController(IUserService userService) : base(userService)
         {
         }
 
         [HttpGet]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [TokenRequestValidation]
         public new ActionResult GetAll()
@@ -29,6 +30,7 @@ namespace BookStore.Api.Controllers
         [HttpGet("{id}")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [TokenRequestValidation]
         public ActionResult Get(Guid id)
@@ -48,6 +50,7 @@ namespace BookStore.Api.Controllers
         [HttpPut("{id}")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [TokenRequestValidation]
         public new ActionResult Update([FromRoute] Guid id, [FromBody] UserUpdateDTO model)
@@ -57,7 +60,8 @@ namespace BookStore.Api.Controllers
 
         [HttpDelete("{id}")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
-        [ProducesResponseType((int)HttpStatusCode.NoContent)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [TokenRequestValidation]
         public new ActionResult Delete(Guid id)

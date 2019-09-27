@@ -1,6 +1,8 @@
 ﻿using BookStore.Business.Base;
 using BookStore.Business.Interface;
+using BookStore.CrossCutting.DTO.User;
 using BookStore.CrossCutting.Exceptions;
+using BookStore.CrossCutting.Helper;
 using BookStore.Data.Interface;
 using BookStore.Domain;
 using System;

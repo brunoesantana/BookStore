@@ -6281,11 +6281,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Data\\BookStore.Data.csproj",
+      "projectUniqueName": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Data\\BookStore.Data.csproj",
       "projectName": "BookStore.Data",
-      "projectPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Data\\BookStore.Data.csproj",
+      "projectPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Data\\BookStore.Data.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Data\\obj\\",
+      "outputPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6304,8 +6304,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
-              "projectPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
+            "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
+              "projectPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
             }
           }
         }

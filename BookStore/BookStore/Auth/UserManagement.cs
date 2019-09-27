@@ -40,6 +40,7 @@ namespace BookStore.Api.Auth
 
             var tokenRequest = header.Value.ToArray()[0];
             var token = Guid.Empty;
+
             if (string.IsNullOrEmpty(tokenRequest) || !Guid.TryParse(tokenRequest, out token) || token == Guid.Empty)
                 throw new ForbiddenException();
 

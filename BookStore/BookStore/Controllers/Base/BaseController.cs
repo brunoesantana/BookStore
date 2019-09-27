@@ -5,6 +5,7 @@ using BookStore.CrossCutting.Helper;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BookStore.Api.Controllers.Base
 {
@@ -59,7 +60,7 @@ namespace BookStore.Api.Controllers.Base
         protected ActionResult GetAll()
         {
             var response = _service.GetAll();
-            return Ok(MapperHelper.Map<List<T>, List<TDto>>(response));
+            return response.Any() ? Ok(MapperHelper.Map<List<T>, List<TDto>>(response)) : throw new NotFoundException();
         }
     }
 }

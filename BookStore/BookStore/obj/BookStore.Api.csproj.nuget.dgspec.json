@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\teste_theos\\BookStore\\BookStore\\BookStore\\BookStore.Api.csproj": {}
+    "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore\\BookStore.Api.csproj": {}
   },
   "projects": {
-    "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Business\\BookStore.Business.csproj": {
+    "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Business\\BookStore.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Business\\BookStore.Business.csproj",
+        "projectUniqueName": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Business\\BookStore.Business.csproj",
         "projectName": "BookStore.Business",
-        "projectPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Business\\BookStore.Business.csproj",
+        "projectPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Business\\BookStore.Business.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Business\\obj\\",
+        "outputPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,14 +30,14 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\teste_theos\\BookStore\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
-                "projectPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj"
+              "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
+                "projectPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj"
               },
-              "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Data\\BookStore.Data.csproj": {
-                "projectPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Data\\BookStore.Data.csproj"
+              "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Data\\BookStore.Data.csproj": {
+                "projectPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Data\\BookStore.Data.csproj"
               },
-              "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
-                "projectPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
+              "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
+                "projectPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
               }
             }
           }
@@ -114,14 +114,14 @@
         }
       }
     },
-    "C:\\teste_theos\\BookStore\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
+    "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
+        "projectUniqueName": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
         "projectName": "BookStore.CrossCutting",
-        "projectPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
+        "projectPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.CrossCutting\\BookStore.CrossCutting.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.CrossCutting\\obj\\",
+        "outputPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -218,14 +218,14 @@
         }
       }
     },
-    "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Data\\BookStore.Data.csproj": {
+    "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Data\\BookStore.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Data\\BookStore.Data.csproj",
+        "projectUniqueName": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Data\\BookStore.Data.csproj",
         "projectName": "BookStore.Data",
-        "projectPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Data\\BookStore.Data.csproj",
+        "projectPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Data\\BookStore.Data.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Data\\obj\\",
+        "outputPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -244,8 +244,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
-                "projectPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
+              "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
+                "projectPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
               }
             }
           }
@@ -322,14 +322,14 @@
         }
       }
     },
-    "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
+    "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
+        "projectUniqueName": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
         "projectName": "BookStore.Domain",
-        "projectPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
+        "projectPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Domain\\obj\\",
+        "outputPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -422,14 +422,14 @@
         }
       }
     },
-    "C:\\teste_theos\\BookStore\\BookStore\\BookStore\\BookStore.Api.csproj": {
+    "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore\\BookStore.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\teste_theos\\BookStore\\BookStore\\BookStore\\BookStore.Api.csproj",
+        "projectUniqueName": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore\\BookStore.Api.csproj",
         "projectName": "BookStore.Api",
-        "projectPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore\\BookStore.Api.csproj",
+        "projectPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore\\BookStore.Api.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore\\obj\\",
+        "outputPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -448,11 +448,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Business\\BookStore.Business.csproj": {
-                "projectPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Business\\BookStore.Business.csproj"
+              "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Business\\BookStore.Business.csproj": {
+                "projectPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Business\\BookStore.Business.csproj"
               },
-              "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Data\\BookStore.Data.csproj": {
-                "projectPath": "C:\\teste_theos\\BookStore\\BookStore\\BookStore.Data\\BookStore.Data.csproj"
+              "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Data\\BookStore.Data.csproj": {
+                "projectPath": "C:\\teste_theos\\teste.dotNet\\BookStore\\BookStore.Data\\BookStore.Data.csproj"
               }
             }
           }

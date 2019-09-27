@@ -12,7 +12,7 @@ namespace BookStore.Controllers
     [Route("api/v1/books")]
     public class BookController : BaseController<Book, BookDTO, BookInsertDTO, BookUpdateDTO>
     {
-        public BookController(IBookService baseService) : base(baseService)
+        public BookController(IBookService bookService) : base(bookService)
         {
         }
 
@@ -37,6 +37,7 @@ namespace BookStore.Controllers
         [HttpPost]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [TokenRequestValidation]
         public new ActionResult Add([FromBody] BookInsertDTO model)
@@ -47,6 +48,7 @@ namespace BookStore.Controllers
         [HttpPut("{id}")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [TokenRequestValidation]
         public new ActionResult Update([FromRoute] Guid id, [FromBody] BookUpdateDTO model)
@@ -56,7 +58,8 @@ namespace BookStore.Controllers
 
         [HttpDelete("{id}")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
-        [ProducesResponseType((int)HttpStatusCode.NoContent)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [TokenRequestValidation]
         public new ActionResult Delete(Guid id)

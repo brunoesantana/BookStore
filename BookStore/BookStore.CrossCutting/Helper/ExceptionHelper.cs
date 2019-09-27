@@ -23,13 +23,13 @@ namespace BookStore.CrossCutting.Helper
             {
                 await _next(context);
             }
-            catch (System.Exception e)
+            catch (Exception e)
             {
                 await HandleException(context, e);
             }
         }
 
-        private static Task HandleException(HttpContext context, System.Exception exception)
+        private static Task HandleException(HttpContext context, Exception exception)
         {
             HttpStatusCode code;
             object response = exception.Message;
@@ -38,7 +38,7 @@ namespace BookStore.CrossCutting.Helper
             {
                 case EntityValidationException _:
                     code = HttpStatusCode.BadRequest;
-                    response = new ErrorMessageModel("Requisição inválida");
+                    response = new ErrorMessageModel($"Requisição inválida: {exception.Message}");
                     break;
 
                 case NotFoundException _:
@@ -58,12 +58,13 @@ namespace BookStore.CrossCutting.Helper
 
                 default:
                     code = HttpStatusCode.InternalServerError;
-                    response = new ErrorMessageModel(exception.Message);
+                    response = new ErrorMessageModel($"Erro: {exception.Message}");
                     break;
             }
 
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = Convert.ToInt32(code);
+
             return context.Response.WriteAsync(JsonConvert.SerializeObject(response, new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() }));
         }
     }
